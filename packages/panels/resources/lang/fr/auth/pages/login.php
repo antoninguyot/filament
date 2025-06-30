@@ -43,6 +43,21 @@ return [
 
     ],
 
+    'multi_factor' => [
+        'heading' => 'Vérifiez votre identité',
+        'subheading' => 'Pour continuer à vous connecter, vous devez vérifier votre identité.',
+        'form' => [
+            'provider' => [
+                'label' => 'Comment souhaitez-vous vérifier ?',
+            ],
+            'actions' => [
+                'authenticate' => [
+                    'label' => 'Confirmer la connexion',
+                ],
+            ],
+        ],
+    ],
+
     'messages' => [
 
         'failed' => 'Ces identifiants ne correspondent pas à nos enregistrements.',

@@ -6,6 +6,12 @@ return [
 
         'heading' => 'Colonnes',
 
+        'actions' => [
+            'apply' => [
+                'label' => 'Appliquer les colonnes',
+            ],
+        ],
+
     ],
 
     'columns' => [
@@ -146,6 +152,9 @@ return [
 
         'select' => [
             'placeholder' => 'Tout',
+            'relationship' => [
+                'empty_option_label' => 'Aucun',
+            ],
         ],
 
         'trashed' => [
@@ -228,5 +237,7 @@ return [
         ],
 
     ],
+
+    'default_model_label' => 'enregistrement',
 
 ];

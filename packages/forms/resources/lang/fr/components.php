@@ -279,6 +279,28 @@ return [
 
     ],
 
+    'modal_table_select' => [
+
+        'actions' => [
+
+            'select' => [
+
+                'label' => 'Sélectionner',
+
+                'actions' => [
+
+                    'select' => [
+                        'label' => 'Sélectionner',
+                    ],
+
+                ],
+
+            ],
+
+        ],
+
+    ],
+
     'radio' => [
 
         'boolean' => [
@@ -341,42 +363,84 @@ return [
     ],
 
     'rich_editor' => [
-
-        'dialogs' => [
-
-            'link' => [
-
-                'actions' => [
-                    'link' => 'Lien',
-                    'unlink' => 'Dissocier',
+        'actions' => [
+            'attach_files' => [
+                'label' => 'Téléverser un fichier',
+                'modal' => [
+                    'heading' => 'Téléverser un fichier',
+                    'form' => [
+                        'file' => [
+                            'label' => [
+                                'new' => 'Fichier',
+                                'existing' => 'Remplacer le fichier',
+                            ],
+                        ],
+                        'alt' => [
+                            'label' => [
+                                'new' => 'Texte alternatif',
+                                'existing' => 'Modifier le texte alternatif',
+                            ],
+                        ],
+                    ],
                 ],
-
-                'label' => 'URL',
-
-                'placeholder' => 'Entrez une URL',
-
             ],
-
+            'custom_block' => [
+                'modal' => [
+                    'actions' => [
+                        'insert' => [
+                            'label' => 'Insérer',
+                        ],
+                        'save' => [
+                            'label' => 'Enregistrer',
+                        ],
+                    ],
+                ],
+            ],
+            'link' => [
+                'label' => 'Modifier',
+                'modal' => [
+                    'heading' => 'Lien',
+                    'form' => [
+                        'url' => [
+                            'label' => 'URL',
+                        ],
+                        'should_open_in_new_tab' => [
+                            'label' => 'Ouvrir dans un nouvel onglet',
+                        ],
+                    ],
+                ],
+            ],
         ],
-
+        'no_merge_tag_search_results_message' => 'Aucun résultat pour ces champs de fusion.',
         'tools' => [
+            'align_center' => 'Aligner au centre',
+            'align_end' => 'Aligner à droite',
+            'align_justify' => 'Justifier',
+            'align_start' => 'Aligner à gauche',
             'attach_files' => 'Joindre fichiers',
             'blockquote' => 'Citation',
             'bold' => 'Gras',
             'bullet_list' => 'Liste à puces',
-            'code_block' => 'Code',
+            'code_block' => 'Bloc de code',
+            'custom_blocks' => 'Blocs',
             'h1' => 'Titre',
-            'h2' => 'Titre',
+            'h2' => 'En-tête',
             'h3' => 'Sous-titre',
+            'highlight' => 'Surligner',
+            'horizontal_rule' => 'Règle horizontale',
             'italic' => 'Italique',
+            'lead' => 'Texte introductif',
             'link' => 'Lien',
+            'merge_tags' => 'Champs de fusion',
             'ordered_list' => 'Liste numérotée',
             'redo' => 'Refaire',
+            'small' => 'Petit texte',
             'strike' => 'Barré',
+            'subscript' => 'Indice',
+            'superscript' => 'Exposant',
             'underline' => 'Souligné',
             'undo' => 'Annuler',
         ],
-
     ],
 
     'select' => [
