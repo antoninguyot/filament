@@ -49,11 +49,21 @@ return [
         ],
 
         'notifications' => [
-
             'deleted' => [
                 'title' => 'Supprimé(e)s',
             ],
 
+            'deleted_partial' => [
+                'title' => 'Supprimé :count sur :total',
+                'missing_authorization_failure_message' => "Vous n'avez pas l'autorisation de supprimer :count.",
+                'missing_processing_failure_message' => ":count n'a pas pu être supprimé.",
+            ],
+
+            'deleted_none' => [
+                'title' => 'Échec de la suppression',
+                'missing_authorization_failure_message' => "Vous n'avez pas l'autorisation de supprimer :count.",
+                'missing_processing_failure_message' => ":count n'a pas pu être supprimé.",
+            ],
         ],
 
     ],
